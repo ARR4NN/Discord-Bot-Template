@@ -1,14 +1,6 @@
 /**
  * Module Imports
  */
-// const os = require("os")
-// const homdir = os.homedir()
-// const config = require("./config.json");
-// if (homdir == `C:\\Users\\Ajhar`) {
-//   var TOKEN = config.TOKENTESTING
-// } else {
-//   var TOKEN = config.TOKEN
-// }
 const { TOKEN } = require("./config.json")
 const { Client, Collection, Intents } = require("discord.js");
 const { readdirSync } = require("fs");
