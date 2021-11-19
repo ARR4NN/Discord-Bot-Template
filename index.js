@@ -22,6 +22,7 @@ client.on("ready", () => {
 /**
  * Event Handling
  */
+
 for (const file of eventFiles) {
     const event = require(`./events/${file}`);
     if (event.once) {
