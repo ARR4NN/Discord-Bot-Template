@@ -13,12 +13,28 @@ const client = new Client({
     ],
     partials: ['MESSAGE', 'CHANNEL', 'REACTION'],
 });
+const expiredRow = new Discord.MessageActionRow().addComponents(new Discord.MessageButton().setLabel("Expired interaction").setStyle("SECONDARY").setCustomId("expired-btn").setDisabled());
 client.login(TOKEN);
 client.commands = new Collection();
 client.on("ready", () => {
     console.log(`${client.user.username} ready!`);
     client.user.setActivity(`Hello`, { type: "PLAYING" });
 });
+client.btnHandlers = new Map();
+try {
+    client.addBtnHandler = (message, handler) => {
+        client.btnHandlers.set(message.id, handler);
+        setTimeout(() => {
+            client.btnHandlers.delete(message.id);
+            message.edit({
+                components: [expiredRow]
+            })
+        }, 360000);
+        // Default: 360000
+    }
+} catch (err) {
+    return
+}
 /**
  * Event Handling
  */
