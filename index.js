@@ -2,7 +2,7 @@
  * Module Imports
  */
 const { TOKEN } = require("./config.json")
-const { Client, Collection, Intents } = require("discord.js");
+const { Client, Collection, Intents, MessageButton, MessageActionRow } = require("discord.js");
 const { readdirSync } = require("fs");
 const eventFiles = readdirSync('./events').filter(file => file.endsWith('.js'));
 const client = new Client({
