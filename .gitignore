@@ -25,5 +25,6 @@ typings/
 .eslintcache
 .node_repl_history
 *.tgz
+.env
 .yarn-integrity
 config.json

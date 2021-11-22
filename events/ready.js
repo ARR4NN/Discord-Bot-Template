@@ -1,5 +1,5 @@
 const discord = require('discord.js')
-const { status, statusType } = require("../config.json")
+const { status, statusType } = require("../util/config")
 module.exports = {
     name: 'ready',
     once: true,

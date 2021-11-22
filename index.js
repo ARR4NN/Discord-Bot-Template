@@ -1,7 +1,8 @@
 /**
  * Module Imports
  */
-const { TOKEN } = require("./config.json")
+require('dotenv').config()
+const { TOKEN } = require("./util/config")
 const { Client, Collection, Intents, MessageButton, MessageActionRow } = require("discord.js");
 const { readdirSync } = require("fs");
 const eventFiles = readdirSync('./events').filter(file => file.endsWith('.js'));
@@ -13,7 +14,7 @@ const client = new Client({
     ],
     partials: ['MESSAGE', 'CHANNEL', 'REACTION'],
 });
-const expiredRow = new Discord.MessageActionRow().addComponents(new Discord.MessageButton().setLabel("Expired interaction").setStyle("SECONDARY").setCustomId("expired-btn").setDisabled());
+const expiredRow = new MessageActionRow().addComponents(new MessageButton().setLabel("Expired interaction").setStyle("SECONDARY").setCustomId("expired-btn").setDisabled());
 client.login(TOKEN);
 client.commands = new Collection();
 client.on("ready", () => {
