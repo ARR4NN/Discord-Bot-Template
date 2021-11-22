@@ -1,6 +1,6 @@
 ## Welcome to my discord bot template
-
-This is wrote in [Discord.js V13](https://discordjs.guide), it uses slash commands.
+![background](https://i.imgur.com/iMf3JVO.png)
+Wrote in [Discord.js V13](https://discordjs.guide), contains slash commands, select menus, and more.
 
 __**Default Commands**__  
 
