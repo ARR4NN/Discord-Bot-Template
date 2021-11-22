@@ -2,6 +2,12 @@
 
 This is wrote in [Discord.js V13](https://discordjs.guide), it uses slash commands.
 
+__**Default Commands**__
+![coolcommand](https://i.imgur.com/ogJIU0d.png)  
+![button](https://i.imgur.com/Efk6S8D.png)  
+![select](https://i.imgur.com/mRS8jyg.png)  
+
+
 __How to use__
 1) Click `Use this template`.
 2) Give your new repo a name.
@@ -21,7 +27,9 @@ __Getting started__
 ```yml
 How to create a bot: https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token
 ```  
-
+__**Register Slash Commands**__
+> Ensure you have set the clientId and guildId in the config!
+1) Run `node reg.js`
 
 __**Hosting the bot**__
 1) Rename `config.json.example` to `config.json`
@@ -43,6 +51,5 @@ __**Hosting the bot**__
 3) Upload the config or input the values on your hosting.
 
 > WARNING never push any config files (.env , config.json) to any code storage systems example github. Even if the repo is private! 
-
 
 Need any help let me know **ARR4NN#0340**

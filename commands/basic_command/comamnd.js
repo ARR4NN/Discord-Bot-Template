@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 
 module.exports = {
     name: "coolcommand", // Command Name
-    description: "commandDescription2", // Command Description
+    description: "commandDescription", // Command Description
     options: [ // Options
         {
             name: "string",
@@ -20,6 +20,6 @@ module.exports = {
         },
     ],
     async execute(Client, interaction) {
-        interaction.reply({ content: "Welcome to command 2!" }).catch(err => { });
+        interaction.reply({ content: "Wow this is a cool command!" }).catch(err => { });
     }
 };
