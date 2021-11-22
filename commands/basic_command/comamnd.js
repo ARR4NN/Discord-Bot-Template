@@ -20,6 +20,7 @@ module.exports = {
         },
     ],
     async execute(Client, interaction) {
+        interaction.channel.send("This is a cool command");
         interaction.reply({ content: "Wow this is a cool command!" }).catch(err => { });
     }
 };

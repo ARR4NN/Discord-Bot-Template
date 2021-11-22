@@ -1,8 +1,8 @@
 /**
  * Module Imports
  */
-require('dotenv').config()
-const { TOKEN } = require("./util/config")
+require('dotenv').config();
+const { TOKEN } = require("./util/config");
 const { Client, Collection, Intents, MessageButton, MessageActionRow } = require("discord.js");
 const { readdirSync } = require("fs");
 const eventFiles = readdirSync('./events').filter(file => file.endsWith('.js'));
@@ -17,10 +17,6 @@ const client = new Client({
 const expiredRow = new MessageActionRow().addComponents(new MessageButton().setLabel("Expired interaction").setStyle("SECONDARY").setCustomId("expired-btn").setDisabled());
 client.login(TOKEN);
 client.commands = new Collection();
-client.on("ready", () => {
-    console.log(`${client.user.username} ready!`);
-    client.user.setActivity(`Hello`, { type: "PLAYING" });
-});
 client.btnHandlers = new Map();
 try {
     client.addBtnHandler = (message, handler) => {
@@ -29,7 +25,7 @@ try {
             client.btnHandlers.delete(message.id);
             message.edit({
                 components: [expiredRow]
-            })
+            });
         }, 360000);
         // Default: 360000
     }
@@ -63,8 +59,12 @@ for (const folder of commandFolders) {
 
 
 process.on("unhandledRejection", async (error) => {
-    console.log(error)
+    if (error.code == 50013) {
+        console.log("[ERROR] [UnhandledRejection] I dont have the correct permissions.")
+    } else {
+        console.log(error);
+    }
 })
 process.on("unhandledException", async (error) => {
-    console.log(error)
+    console.log(error);
 })

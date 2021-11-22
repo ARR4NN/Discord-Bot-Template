@@ -4,8 +4,8 @@ module.exports = {
     name: 'ready',
     once: true,
     async execute(client) {
-        console.log("Logged in")
-        console.log("[INFO] Pterodactyl mark as online.")
+        console.log("---------------------------------------------------------\nThanks for using ARR4NN's template!\nYou can support me at https://ko-fi.com/ARR4NN\n---------------------------------------------------------")
+        console.log(`${client.user.username} ready!`);
         client.user.setActivity(status, { type: statusType });
 
     },

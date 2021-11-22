@@ -15,10 +15,6 @@ module.exports = {
             interaction.client.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
 
         try {
-            if (!interaction.guild.me.permissions.has(Permissions.FLAGS.EMBED_LINKS)) {
-                interaction.reply({ content: "Oops, I need `EMBED_LINKS` permissions to work correctly." })
-                return
-            }
             command.execute(Client, interaction);
         } catch (error) {
             console.error(error);
