@@ -2,10 +2,11 @@
 
 This is wrote in [Discord.js V13](https://discordjs.guide), it uses slash commands.
 
-__**Default Commands**__
-![coolcommand](https://i.imgur.com/ogJIU0d.png)  
-![button](https://i.imgur.com/Efk6S8D.png)  
-![select](https://i.imgur.com/mRS8jyg.png)  
+__**Default Commands**__  
+
+![coolcommand](https://i.imgur.com/ogJIU0d.png)    
+![button](https://i.imgur.com/Efk6S8D.png)    
+![select](https://i.imgur.com/mRS8jyg.png)    
 
 
 __How to use__
