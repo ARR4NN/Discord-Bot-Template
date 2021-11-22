@@ -8,6 +8,12 @@ __**Default Commands**__
 ![button](https://i.imgur.com/Efk6S8D.png)    
 ![select](https://i.imgur.com/mRS8jyg.png)    
 
+In this guide: 
+- [How to use](https://github.com/ARR4NN/Discord-Bot-Template#how-to-use)
+- [Getting started](https://github.com/ARR4NN/Discord-Bot-Template#getting-started)
+- [Register Slash Commands](https://github.com/ARR4NN/Discord-Bot-Template#register-slash-commands)
+- [Un-register Slash Commands](https://github.com/ARR4NN/Discord-Bot-Template#un-registering-slash-commands)
+- [Hosting](https://github.com/ARR4NN/Discord-Bot-Template#hosting-the-bot)
 
 ## How to use
 1) Click `Use this template`.
@@ -34,13 +40,13 @@ How to create a bot: https://discordjs.guide/preparations/setting-up-a-bot-appli
 By default it will register all commands to the guild id provided in the config.
 If you want to register commands globally, run `node reg.js --global`.
 
-## Un-registering Slash Commands
+## Un-register Slash Commands
 
 To clear guild commands run `node reg.js --clearguild`
 To clear global commands run `node reg.js --clearglobal`
 
 
-## Hosting the bot
+## Hosting
 1) Rename `config.json.example` to `config.json`
 ```json
 {
