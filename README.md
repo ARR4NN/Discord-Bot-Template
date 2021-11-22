@@ -2,7 +2,14 @@
 
 This is wrote in [Discord.js V13](https://discordjs.guide), it uses slash commands.
 
-To get started:
+__How to use__
+1) Click `Use this template`.
+2) Give your new repo a name.
+3) Click the `Code` button and copy link. Should look like `https://github.com/YOURNAME/REPONAME.git`.
+4) Open a new folder on your pc, in the terminal run `git pull https://github.com/YOURNAME/REPONAME.git .`, don't for the `.` at the end of the pull to pull the code correctly.
+5) Get coding!
+
+__Getting started__
 1) Rename `.env.example` to `.env`
 2) Add your:
 - Bot token [Link](https://discord.com/developers)
