@@ -2,21 +2,21 @@
 
 This is wrote in [Discord.js V13](https://discordjs.guide), it uses slash commands.
 
-++**Default Commands**++  
+__**Default Commands**__  
 
 ![coolcommand](https://i.imgur.com/ogJIU0d.png)    
 ![button](https://i.imgur.com/Efk6S8D.png)    
 ![select](https://i.imgur.com/mRS8jyg.png)    
 
 
-++How to use++
+__How to use__
 1) Click `Use this template`.
 2) Give your new repo a name.
 3) Click the `Code` button and copy link. Should look like `https://github.com/YOURNAME/REPONAME.git`.
 4) Open a new folder on your pc, in the terminal run `git pull https://github.com/YOURNAME/REPONAME.git .`, don't for the `.` at the end of the pull to pull the code correctly.
 5) Get coding!
 
-++Getting started++
+__Getting started__
 1) Rename `.env.example` to `.env`
 2) Add your:
 - Bot token [Link](https://discord.com/developers)
@@ -28,11 +28,11 @@ This is wrote in [Discord.js V13](https://discordjs.guide), it uses slash comman
 ```yml
 How to create a bot: https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token
 ```  
-++**Register Slash Commands**++
+__**Register Slash Commands**__
 > Ensure you have set the clientId and guildId in the config!
 1) Run `node reg.js`
 
-++**Hosting the bot**++
+__**Hosting the bot**__
 1) Rename `config.json.example` to `config.json`
 ```json
 {
