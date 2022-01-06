@@ -1,4 +1,5 @@
 var myArgs = process.argv.slice(2);
+require('dotenv').config();
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { TOKEN, clientId, guildId } = require('./util/config');
